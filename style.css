@@ -2,6 +2,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -12,7 +13,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
 }
 
 .tick text {
