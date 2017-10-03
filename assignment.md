@@ -7,7 +7,7 @@ at [**@CMDA**][cmda].
 
 *   [x] [GitHub Pages](#github-pages)
 *   [x] [Metadata](#metadata)
-*   [ ] [Workflow](#workflow)
+*   [x] [Workflow](#workflow)
 *   [x] Replace this document in your fork with your own readme!
 
 ## GitHub Pages
