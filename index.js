@@ -1,10 +1,7 @@
 /*
-
-Bron voor de Bar Chart:
+Bar Chart:
 https://bl.ocks.org/d3noob/bdf28027e0ce70bd132edc64f1dd7ea4
-
 */
-
 
 // set the dimensions and margins of the graph
 var margin = {top: 20, right: 20, bottom: 100, left: 60},
@@ -37,7 +34,7 @@ d3.tsv("./data.tsv", function(error, data) {
     d.sales = +d.sales;
   });
 
-  // Scale the range of the data in the domains
+  // scale the range of the data in the domains
   x.domain(data.map(function(d) { return d.language; }));
   y.domain([0, d3.max(data, function(d) { return Number(d.speakers); })]);
 
@@ -51,34 +48,28 @@ d3.tsv("./data.tsv", function(error, data) {
       .attr("y", function(d) { return y(d.speakers); })
       .attr("height", function(d) { return height - y(d.speakers); });
 
-
-
   // add the x Axis
-  /*
-  Bron voor het veranderen van de labels:
-  https://bl.ocks.org/d3noob/3c040800ff6457717cca586ae9547dbf
-  */
-
   svg.append("g")
       .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x))
       .selectAll("text")
+      /*
+      rotating the labels for legibility:
+      https://bl.ocks.org/d3noob/3c040800ff6457717cca586ae9547dbf
+      */
         .style("text-anchor", "end")
         .attr("dx", "-0.9em")
         .attr("dy", "-0.2em")
         .attr("transform", "rotate(-50)");
 
-
-/*
-Bron voor het veranderen van de format:
-https://bl.ocks.org/mbostock/9764126
-*/
-
   // add the y Axis
   svg.append("g")
       .call(d3.axisLeft(y)
+      /*
+      changing the format:
+      https://bl.ocks.org/mbostock/9764126
+      1e8 = to format the values to increase legibility.
+      */
         .ticks(10)
         .tickFormat(d3.formatPrefix(".0", 1e8)));
-
-
 });
