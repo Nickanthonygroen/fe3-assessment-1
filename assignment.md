@@ -5,10 +5,10 @@ at [**@CMDA**][cmda].
 
 ## TODO
 
-*   [ ] [GitHub Pages](#github-pages)
-*   [ ] [Metadata](#metadata)
+*   [x] [GitHub Pages](#github-pages)
+*   [x] [Metadata](#metadata)
 *   [ ] [Workflow](#workflow)
-*   [ ] Replace this document in your fork with your own readme!
+*   [x] Replace this document in your fork with your own readme!
 
 ## GitHub Pages
 
