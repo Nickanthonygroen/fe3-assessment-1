@@ -14,7 +14,7 @@ I've searched for a simple bar chart and used code from the following graph:
 
 https://bl.ocks.org/d3noob/bdf28027e0ce70bd132edc64f1dd7ea4
 
-This graph also happens to be made in d3 v4 which was a requirement. 
+This graph also happens to be made in d3 v4 which was a requirement.
 
 At some point I had to change the format of the amount of people who spoke the language since 1.000.000.0000.000 wasn't really legible. For this I used this code:
 
@@ -46,8 +46,5 @@ I tried to match the bar chart to the data as best as possible. I think it was t
 
 # License
 
-GPLv3 Nick Groen
-
-Bar chart used by @d3noob(GPL-3.0):
-
-https://bl.ocks.org/d3noob/bdf28027e0ce70bd132edc64f1dd7ea4
+[GPLv3](https://www.google.com) Nick Groen
+[Bar chart](https://bl.ocks.org/d3noob/bdf28027e0ce70bd132edc64f1dd7ea4) by used by @d3noob(GPL-3.0)
