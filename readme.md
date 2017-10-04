@@ -47,4 +47,5 @@ I tried to match the bar chart to the data as best as possible. I think it was t
 # License
 
 [GPLv3](https://www.google.com) Nick Groen
+
 [Bar chart](https://bl.ocks.org/d3noob/bdf28027e0ce70bd132edc64f1dd7ea4) by used by @d3noob(GPL-3.0)
